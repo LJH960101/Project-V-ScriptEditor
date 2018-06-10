@@ -17,3 +17,13 @@ C:\Users\JW\Desktop\FuckingShit\FuckingShit\ScriptEditor\ScriptEditor\obj\Debug\
 C:\Users\JW\Desktop\FuckingShit\FuckingShit\ScriptEditor\ScriptEditor\obj\Debug\ScriptEditor.csproj.CoreCompileInputs.cache
 C:\Users\JW\Desktop\FuckingShit\FuckingShit\ScriptEditor\ScriptEditor\obj\Debug\ScriptEditor.exe
 C:\Users\JW\Desktop\FuckingShit\FuckingShit\ScriptEditor\ScriptEditor\obj\Debug\ScriptEditor.pdb
+D:\Project\Git\PV-Editor\ScriptEditor\bin\Debug\ScriptEditor.exe.config
+D:\Project\Git\PV-Editor\ScriptEditor\bin\Debug\ScriptEditor.exe
+D:\Project\Git\PV-Editor\ScriptEditor\bin\Debug\ScriptEditor.pdb
+D:\Project\Git\PV-Editor\ScriptEditor\obj\Debug\ScriptEditor.csprojResolveAssemblyReference.cache
+D:\Project\Git\PV-Editor\ScriptEditor\obj\Debug\ScriptEditor.Form1.resources
+D:\Project\Git\PV-Editor\ScriptEditor\obj\Debug\ScriptEditor.Properties.Resources.resources
+D:\Project\Git\PV-Editor\ScriptEditor\obj\Debug\ScriptEditor.csproj.GenerateResource.Cache
+D:\Project\Git\PV-Editor\ScriptEditor\obj\Debug\ScriptEditor.csproj.CoreCompileInputs.cache
+D:\Project\Git\PV-Editor\ScriptEditor\obj\Debug\ScriptEditor.exe
+D:\Project\Git\PV-Editor\ScriptEditor\obj\Debug\ScriptEditor.pdb

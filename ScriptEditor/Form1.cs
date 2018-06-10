@@ -21,8 +21,15 @@ namespace ScriptEditor
             InitializeComponent();
             Application.EnableVisualStyles();
             richTextBox1.ShortcutsEnabled = true;
+            richTextBox1.KeyPress += new KeyPressEventHandler(Form1_KeyPress);
         }
-
+        void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13 || e.KeyChar == 32)
+            {
+                AddLineNumbers();
+            }
+        }
         private void AddNewStringOnCurrentLine(string script)
         {
             int currentPosition = richTextBox1.GetFirstCharIndexOfCurrentLine();
@@ -294,6 +301,46 @@ namespace ScriptEditor
         private void button22_Click(object sender, EventArgs e)
         {
             AddNewStringOnCurrentLine("[WT 트리거번호]");
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            AddNewStringOnCurrentLine("[COMMENT 0$댓글]");
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            AddNewStringOnCurrentLine("[IF 캐릭터코드$레벨$우선순위$호감도]");
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            AddNewStringOnCurrentLine("[COMMENT 캐릭터코드$댓글]");
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            AddNewStringOnCurrentLine("[COMMENT @아이디$댓글]");
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            AddNewStringOnCurrentLine("[LIKE 갯수]");
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            AddNewStringOnCurrentLine("[NPC]\n[GAME_NPC]\n내 도전을 받아라!!\n[GAME_START]\n[GAME_HIGH]\n[PC]\n[GAME_PC]\n이겼지롱~~\n[GAME_SAME]\n[PC]\n[GAME_PC]\n똑같네 ㅋㅋㅋ\n[GAME_LOW]\n[PC]\n[GAME_PC]\nㅠㅜ 잘하네..\n[GAME_IGNORE]\n[PC]\n미안 지금 좀 바빠서 ㅠㅜ\n[GAME_END]\n[NPC]\n크아앙!!");
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            AddNewStringOnCurrentLine("$NAME");
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            AddNewStringOnCurrentLine("[ENDING]");
         }
     }
 }
