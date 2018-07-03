@@ -1,1 +1,31 @@
+
+[IF 캐릭터코드$레벨$우선순위$호감도]
+[COMMENT 0$댓글]
+[LIKE 갯수]
+
+[COMMENT 캐릭터코드$댓글]
 [COMMENT @아이디$댓글]
+[LIKE 갯수]
+[NPC]
+[GAME_NPC]
+내 도전을 받아라!!
+[GAME_START]
+[GAME_HIGH]
+[PC]
+[GAME_PC]
+이겼지롱~~
+[GAME_SAME]
+[PC]
+[GAME_PC]
+똑같네 ㅋㅋㅋ
+[GAME_LOW]
+[PC]
+[GAME_PC]
+ㅠㅜ 잘하네..
+[GAME_IGNORE]
+[PC]
+미안 지금 좀 바빠서 ㅠㅜ
+[GAME_END]
+[NPC]
+크아앙!!
+
