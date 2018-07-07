@@ -30,6 +30,37 @@ namespace ScriptEditor
                 AddLineNumbers();
             }
         }
+        private void AddNewStringOnBeforeLine(string script)
+        {
+            int currentPosition = richTextBox1.GetFirstCharIndexOfCurrentLine();
+            if (richTextBox1.Text.Length > 0 && currentPosition < richTextBox1.Text.Length && richTextBox1.Text[currentPosition] != '\n')
+            {
+                bool chk = false;
+                for (int i = currentPosition; i > 0; --i)
+                {
+                    if (richTextBox1.Text[i] == '\n')
+                    {
+                        currentPosition = i;
+                        SetrichTextBox1(currentPosition, "\n" + script);
+                        chk = true;
+                        return;
+                    }
+                }
+                if (!chk)
+                {
+                    currentPosition = 0;
+                    SetrichTextBox1(currentPosition, script + "\n");
+                }
+            }
+            else if (currentPosition >= richTextBox1.Text.Length || richTextBox1.Text.Length == 0)
+            {
+                SetrichTextBox1(currentPosition, "\n" + script + "\n");
+            }
+            else if (richTextBox1.Text[currentPosition] == '\n')
+            {
+                SetrichTextBox1(currentPosition, script + "\n");
+            }
+        }
         private void AddNewStringOnCurrentLine(string script)
         {
             int currentPosition = richTextBox1.GetFirstCharIndexOfCurrentLine();
@@ -145,7 +176,7 @@ namespace ScriptEditor
 
         private void button15_Click(object sender, EventArgs e)
         {
-            AddNewStringOnCurrentLine("[W 초]");
+            AddNewStringOnBeforeLine("[W 초]");
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -163,7 +194,7 @@ namespace ScriptEditor
                 else if (richTextBox1.Text[i] == '\n' && count >= 2) break;
                 else if (richTextBox1.Text[i] == '\n' && count < 2) count = 0;
             }
-            AddNewStringOnCurrentLine("[W " + (count * autoDelayValue) + "]");
+            AddNewStringOnBeforeLine("[W " + (count * autoDelayValue) + "]");
         }
 
         private void button1_Click(object sender, EventArgs e)
